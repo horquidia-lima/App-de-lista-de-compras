@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-primary: #F4F5FB;
+    --background-secondary: #FFFFFF;
+    --color-brand: #CA3884;
+    --color-brand-hover: #A52C6B;
+    --color-danger: #C93847;
+    --content-primary: #080B12;
+    --content-secondary: #374151;
+    --content-tertiary: #9CA3AF;
+    --always-white: #FFFFFF;
+    --border-primary: #D1D5DB;
+    --border-hover: #B9C2D0;
+
+    --font: "Inter", sans-serif;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--background-primary);
+}
+
+img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.logo {
+    width: 9.6rem;  
+}
+
+
+.container {
+    max-width: 30rem;
+    margin: 0 auto;
+
+    border: 1px solid red;
+
+    & h3 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 32px;
+        color: var(--content-primary);
+        margin-bottom: 2.75rem;
+    }
+}
+
+form {
+    justify-content: space-between;
+    gap: 1rem;
+
+    & input {
+        border-radius: 0.75rem;
+        padding: 0.3rem 1.125rem;
+        border: 2px solid var(--border-primary);
+
+        &:hover {
+            border: 2px solid var(--border-hover);
+        }
+
+        &:focus {
+            border: 2px solid var(--color-brand);
+            outline: none;
+        }
+    }
+
+    & button {
+        border-radius: 0.75rem;
+        background-color: var(--color-brand);
+        font-weight: 600;
+        line-height: 20px;
+        color: var(--always-white);
+        border: none;
+        padding-inline: 1rem;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--color-brand-hover);
+        }
+    }
+}
+
+.item-list {
+    
+    margin-top: 2.5rem;
+    margin-bottom: 2.25rem;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    & li {
+        display: flex;
+        
+        align-items: center;
+        
+        background-color: var(--always-white);
+        border-radius: 0.75rem;
+        padding: 0.5rem 0.75rem;
+    }
+}
+
+.message {
+    background-color: var(--color-danger);
+    justify-content: space-between;
+    padding: 0.65rem;
+    border-radius: 0.75rem;
+    color: var(--always-white);
+
+    &  .message-text {
+        gap: 0.5rem;
+
+        & img {
+            width: 1.25rem;
+        }
+    }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
